@@ -161,7 +161,7 @@
 .section span {
   font-weight: 600;
   font-size: 18px;
-  color: #3056d3;
+  color: #1a59c8;
   margin-bottom: 40px;
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   margin-bottom: 10px;
@@ -202,7 +202,7 @@
     font-size: 55px;
     color: white;
     padding: 20px;
-    background-color: #3056d3;
+    background-color: #1a59c8;
     margin-top: 15px;
   }
 
@@ -218,12 +218,13 @@
     display: block;
     list-style: none;
     color: #637381;
+    font-weight: bold;
   }
   .box1:hover .feature-content a {
-    color: blue;
+    color: #1a59c8;
   }
   .box1:hover .feature-title {
-    color: rgb(19, 45, 236);
+    color: #1a59c8;
     /* text-shadow: 1px 1px rgb(12, 6, 105); */
   }
   
@@ -278,7 +279,7 @@
   float: left;
   margin-left: 5%;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 1.5%;
   text-align: center;
   align-items: center;
   position: relative;
@@ -382,7 +383,7 @@ img {
 
 .title-offer {
     font-size: 24px;
-    color: #007bff;
+    color: #1a59c8;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -414,7 +415,7 @@ img {
 }
 
 .offer1 i {
-  color:#007bff;
+  color:#1a59c8;
   background-color: #fff;
   font-weight: bold;
   font-size: 55px;
@@ -538,7 +539,7 @@ img {
 
 .slidercontrol .prev, 
 .slidercontrol .next {
-  background-color: #009688;
+  background-color: #1a59c8;
   color: white;
   font-size: 16px;
   width: 80px;
@@ -618,7 +619,7 @@ img {
 
 .item-num i {
   background-color: rgba(255, 255, 255,0.0);
-  color: #6195ff;
+  color: #1a59c8;
   font-size: 50px;
   text-shadow: 2px 2px black;
   
@@ -668,7 +669,7 @@ img {
   width: 70px;
   height: 10px;
   margin: auto;
-  background-color: #00fc13;
+  background-color: #1a59c8;
   margin-top: 30px;
   border-radius: 5px;
 }
@@ -688,6 +689,7 @@ img {
   border: 2px solid wheat;
   text-align: center;
   position: relative;
+  height: 600px;
 
 }
 
@@ -750,7 +752,7 @@ img {
   line-height: 60px;
   font-size: 18px;
   text-align: justify;
-  margin-left: 90px;
+  margin-left: 15%;
   
 }
 
@@ -775,18 +777,18 @@ img {
 
 
 .table-two .circle-price {
-  background-color: #6610f2;
-  outline: 10px solid rgba(111, 66, 193 , 0.5);
-  border: 1px solid rgba(111, 66, 193 , 0.5);
+  background-color: #007bff;
+  outline: 10px solid rgba(62, 142, 228, 0.5);
+  border : 10px solid rgba(62, 142, 228, 0.5);
   color: white;
   
 }
 
 .table-three .circle-price {
-  background-color: #ee417c;
-  outline: 10px solid rgba(211, 75, 88 , 0.5);
+  background-color: #007bff;
+  outline: 10px solid rgba(62, 142, 228, 0.5);
+  border : 10px solid rgba(62, 142, 228, 0.5);
   color: white;
-  border: 1px solid rgba(211, 75, 88 , 0.5);;
 }
 
 .price-table .table-order { 
@@ -802,6 +804,10 @@ img {
   color :#007bff;
   border: 2px solid rgba(62, 142, 228, 0.5);
   cursor: pointer;
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  z-index: 10;
 }
 
 .table-one .one:hover {
@@ -812,40 +818,46 @@ img {
 
 .table-one:hover .circle-price {
   color:black;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .table-two .two {
-  color :#6610f2;
-  border: 2px solid rgba(111, 66, 193 , 0.5);
+  color :#007bff;
+  border: 2px solid rgba(62, 142, 228, 0.5);
   cursor: pointer;
+  left: 110px;
+  bottom: 0;
+  z-index: 10;
 }
 
 .table-two:hover .circle-price {
   color:black;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .table-two .two:hover {
-  background-color: #6610f2;
+  background-color: #007bff;
   color: white;
   transition: 1s;
 
 }
 
 .table-three .three {
-  color :#ee417c;
-  border: 2px solid rgba(211, 75, 88 , 0.5);
+  color :#007bff;
+  border: 2px solid rgba(62, 142, 228, 0.5);
   cursor: pointer;
+  left: 110px;
+  bottom: 0;
+  z-index: 10;
 }
 
 .table-three:hover .circle-price {
   color:black;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .table-three .three:hover {
-  background-color: #ee417c;
+  background-color: #007bff;
   color: white;
   transition: 1s;
 
@@ -864,6 +876,7 @@ img {
   opacity: 0;
   transition: 2s;
   border: 2px solid black;
+  z-index: 9;
 }
 .table-one:hover::after  {
   width: 100%;
@@ -880,10 +893,11 @@ img {
   height: 0;
   top: 0;
   right: 0;
-  background-color: #6610f2;
+  background-color: #007bff;
   opacity: 0;
   transition: 2s;
   border: 2px solid black;
+  z-index: 9;
 }
 
 
@@ -902,10 +916,11 @@ img {
   height: 0;
   top: 0;
   left: 0;
-  background-color: #ee417c;
+  background-color: #007bff;
   opacity: 0;
   transition: 2s;
   border: 2px solid black;
+  z-index: 9;
 }
 
 
@@ -1047,7 +1062,7 @@ img {
   width: 70px;
   height: 10px;
   margin: auto;
-  background-color: #00fc13;
+  background-color: #1a59c8;
   margin-top: 1%;
   border-radius: 5px;
 }
@@ -1087,12 +1102,12 @@ img {
 }
 
 .ourteam-photo:hover  h3 {
-  color: rgb(8, 8, 71);
+  color: #1a59c8;
   display: block;
  
 }
 .ourteam-photo:hover  span {
-  color: rgb(87, 12, 12);
+  color: black;
   text-shadow: 2px 2px 8px rgb(243, 239, 239);
 }
 
@@ -1242,7 +1257,7 @@ img {
 
 .news-data p {
   display: block;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 
@@ -1287,11 +1302,11 @@ img {
 }
 
 .phover:hover .news-data a {
-  color: rgb(21, 21, 173);
+  color: #1a59c8;
+  font-weight: bold;
+
+
 }
-
-
-
 /* section  */
 footer {
   width: 100%;
